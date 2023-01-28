@@ -1,0 +1,54 @@
+baseURL: "https://Ecofobs.com"
+languageCode: en-us
+title: EcoFobs
+theme: PaperMod
+
+params:
+
+  defaultTheme: light
+  disableThemeToggle: true
+
+  homeInfoParams:
+      Title: EcoFobs.com - Eco Friendly RFID Fobs and Cards
+      Content: Get eco-friendly gym keys that become your little employees, working round the clock to build exposure and your fitness business..
+      
+  socialIcons:
+  Name: facebook
+  Url: “https://facebook.com/”
+  Name: twitter
+  Url: “https://twitter.com/”
+
+  cover: 
+      linkFullImages: true
+
+  ShowBreadCrumbs: true
+
+  ShowReadingTime: true
+
+  ShowShareButtons: true
+
+  ShowPostNavLinks: true
+
+
+
+
+menu: 
+  main: 
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 60
+
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      linkify: false
