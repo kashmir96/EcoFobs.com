@@ -39,6 +39,11 @@ menu:
       url: /posts/
       weight: 10
 
+      - identifier: industries
+      name: Industries
+      url: /industries/
+      weight: 10
+
     - identifier: contact
       name: Contact
       url: /contact
