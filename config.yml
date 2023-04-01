@@ -1,4 +1,4 @@
-baseURL: "https://Ecofobs.com"
+baseURL: "https://www.ecofobs.com"
 languageCode: en-us
 title: EcoFobs
 theme: PaperMod
@@ -34,20 +34,25 @@ params:
 
 menu: 
   main: 
+    - identifier: rings
+      name: RFID Finger Rings
+      url: /pages/rfid-rings/
+      weight: 10
+
     - identifier: posts
       name: Posts
       url: /posts/
-      weight: 10
+      weight: 20
 
-      - identifier: industries
+    - identifier: industries
       name: Industries
       url: /industries/
-      weight: 10
+      weight: 30
 
     - identifier: contact
       name: Contact
       url: /contact
-      weight: 60
+      weight: 40
 
 
 
