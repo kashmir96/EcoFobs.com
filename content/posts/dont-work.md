@@ -1,9 +1,5 @@
-
-troubleshooting-what-to-do-when-your-key-fob-doesnt-work
 ---
-title: dont work
-
-Troubleshooting What To Do When Your Key Fob Doesnt Work
+title: "Troubleshooting What To Do When Your Key Fob Doesnt Work"
 description: "- Discover the top reasons why your key fob might not be working and how to get it working again in no time Learn the ins and outs of key fob maintenance and care"
 keywords: key fobs
 tags: ["Eco-Friendly RFID Key Fobs", "RFID Key Fob Bulk Orders", "RFID Key Fob Durability", "RFID Key Fob Applications", "RFID Key Fob Integration", "RFID Key Fob Support"]

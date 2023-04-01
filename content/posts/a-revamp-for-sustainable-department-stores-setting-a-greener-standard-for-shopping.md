@@ -7,9 +7,7 @@ author: Curtis
 categories: ["Eco Friendly RFID Key Fobs"]
 cover: 
  image: /img/recycling/339.webp
- alt: 'would
-
-Feature image of a sustainably-sourced product with a sign that reads Sustainable Department Stores'
+ alt: 'Feature image of a sustainably-sourced product with a sign that reads Sustainable Department Stores'
 ---
 ## A Greener Standard for Shopping for Sustainable Department Stores
 As sustainability and consumer awareness rises, there’s an unprecedented demand for eco-friendly products. Businesses of all shapes and sizes must adapt to this new reality in order to stay relevant and reduce their carbon footprint. Department stores represent a significant portion of shopping culture and there have been efforts to revamp and embrace a more sustainable approach.
