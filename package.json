@@ -1,0 +1,23 @@
+{
+  "name": "ecofobs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashmir96/EcoFobs.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kashmir96/EcoFobs.com/issues"
+  },
+  "homepage": "https://github.com/kashmir96/EcoFobs.com#readme",
+  "description": "",
+  "dependencies": {
+    "stripe": "^11.17.0"
+  }
+}

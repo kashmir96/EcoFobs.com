@@ -54,6 +54,8 @@ menu:
       url: /contact
       weight: 40
 
+build:
+  functions: functions
 
 
 markup:

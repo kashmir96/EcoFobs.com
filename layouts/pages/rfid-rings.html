@@ -1,0 +1,84 @@
+{{ define "main" }}
+
+<style> .main { padding:0px !important; }</style>
+
+  <div class="container">
+    <div class="product-images">
+      <img src="/img/rings/1.webp" alt="Product Image 1" class="active">
+      <img src="/img/rings/2.webp" alt="Product Image 2">
+      <img src="/img/rings/3.webp" alt="Product Image 3">
+    </div>
+    <div class="product-info">
+      <h1 class="product-title">Ecofobs Ceramic RFID Finger Rings: Your Ultimate Accessory for a Hassle-Free Lifestyle</h1>
+      <p class="product-price">Starting at $59.99</p>
+      <form action="/cart/add" method="post">
+        <div class="product-options">
+          <label for="size">Size:</label>
+          <select id="size" name="size">
+            <option value="17mm">17mm</option>
+            <option value="18mm">18mm</option>
+            <option value="19mm">19mm</option>
+            <option value="20mm">20mm</option>
+            <option value="21mm">21mm</option>
+            <option value="22mm">22mm</option>
+          </select>
+        </div>
+        <input type="hidden" name="id" value="product-id">
+        <button id="buy-now-button">Buy Now</button>
+      </form>
+      <div class="product-description">
+        <h2>Unlock Your World with Ceramic RFID Finger Rings</h2>
+        <p>Experience the convenience of accessing your favorite spaces hassle-free with Ecofobs ceramic RFID finger rings. Whether you need to open gym doors, swimming club gates, locker rooms, or office doors, these rings are designed to make your life easier and more efficient.</p>
+        <h2>Benefits:</h2>
+        <ul>
+          <li><strong>Simplify Your Life:</strong> No more bulky keychains or lost access cards. With a ceramic RFID finger ring, you always have your personal key right on your finger, making your life easier and more efficient.</li>
+          <li><strong>Stylish and Sustainable:</strong> Our eco-friendly ceramic RFID finger rings are not only practical but also elegantly designed. Show off your commitment to the environment without compromising style.</li>
+          <li><strong>Versatile Access Solution:</strong> Suitable for gyms, offices, swimming clubs, and locker rooms, these rings are the ultimate access solution. Just check with your provider to ensure compatibility with alternative keys before purchasing.</li>
+        </ul>
+        <h2>Use Cases:</h2>
+        <ul>
+          <li><strong>Gym Door Access:</strong> Never forget or lose your gym key again. With an Ecofobs ceramic RFID finger ring, you always have your gym key on your finger, making it easy to access and use.</li>
+          <li><strong>Swimming Club Access:</strong> Don't let a lost access card ruin your swimming plans. With an Ecofobs ceramic RFID finger ring, you can easily access your swimming club with a stylish and eco-friendly solution.</li>
+            <li><strong>Locker Rooms:</strong> Say goodbye to locker room key hassles. With an Ecofobs ceramic RFID finger ring, you can access your locker room quickly and easily.</li>
+            <li><strong>Office:</strong> No more fumbling for your access card or key. With an Ecofobs ceramic RFID finger ring, you have easy and quick access to your office building.</li>
+          </ul>
+          <h2>Requirements:</h2>
+          <ul>
+            <li><strong>Frequency:</strong> These rings operate at 13.56MHz and use Mifare RFID technology. </li>
+            <li><strong>Compatibility:</strong> These rings work on any reader with Mifare RFID capability, but it often requires the RFID key being logged into the system for the access provider - e.g., the access control, security system, etc. </li>
+            <li><strong>Verification:</strong> We do not guarantee that these rings will work for your specific situation, so please verify that they will work with your access provider before purchasing.</li>
+          </ul>
+          <h2>What Our Customers Are Saying:</h2>
+          <div class="review">
+            <blockquote>"Since I started using my Ecofobs ceramic RFID finger ring, I never have to worry about forgetting my gym key again. It's stylish, convenient, and what more could I ask for?" - Jenna H., Gym Enthusiast</blockquote>
+          </div>
+          <div class="review">
+            <blockquote>"As someone who frequents the swimming club, having a ceramic RFID finger ring has been a game-changer. It's comfortable, eco-friendly, and it always stays securely on my finger. Highly recommend it!" - Mark S., Swimming Club Member</blockquote>
+          </div>
+          <div class="call-to-action">
+            <h2>Don't Wait - Upgrade to a Ceramic RFID Finger Ring Today!</h2>
+            <p>Embrace a more convenient, stylish, and eco-friendly way to access your favorite spaces. Purchase your own ceramic RFID finger ring now and join the growing community of satisfied Ecofobs customers. You deserve a hassle-free lifestyle - get your ring today!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        const images = document.querySelectorAll('.product-images img');
+        const activeImage = document.querySelector('.product-images img.active');
+        
+        images.forEach(image => {
+          image.addEventListener('click', () => {
+            activeImage.classList.remove('active');
+            activeImage = image;
+            activeImage.classList.add('active');
+            const imageUrl = activeImage.getAttribute('src');
+            const productImage = document.querySelector('.product-images-full img');
+            productImage.setAttribute('src', imageUrl);
+          });
+        });
+
+      </script> 
+      <script src="/js/checkout.js"></script>
+   
+      
+{{ end }}
