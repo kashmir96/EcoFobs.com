@@ -234,6 +234,13 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 /* Style for Storefront */
+.no-decoration {
+  list-style: none;
+}
+
+.no-decoration li:before {
+  content: '✔ ';
+}
 .mobile-only {
   display:none;
 }
@@ -399,6 +406,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
       }
 
   }
+ 
+
 
 
   
