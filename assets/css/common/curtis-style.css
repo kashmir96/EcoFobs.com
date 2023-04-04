@@ -234,6 +234,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 /* Style for Storefront */
+.mobile-only {
+  display:none;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -390,6 +393,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         text-align: center;
         width:200px;
       }
+    
+      .mobile-only {
+        display:inline;
+      }
+
   }
 
 
