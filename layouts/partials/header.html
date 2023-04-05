@@ -40,6 +40,10 @@
 {{- end }}
 
 <script src="https://cdn.usefathom.com/script.js" data-site="ZKTYQEFY" defer></script>
+{{- if .Params.js -}}
+  <script src="{{ .Params.js }}"></script>
+{{- end -}}
+
 
 <header class="header">
     <nav class="nav">
