@@ -410,6 +410,82 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 
 
+/* Confirmation page */
   
+  .order-confirmation {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+  }
   
+  .order-confirmation h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ccc;
+  }
+  
+  .order-confirmation p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #f4f4f4;
+  }
+
+  .order-confirmation .support p, .support a {
+    color: #ccc;
+  }
+  
+  .order-confirmation p a {
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .order-confirmation p a:hover {
+    color: #666;
+  }
+  
+  .order-confirmation .support {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .order-confirmation .support p {
+    margin: 0;
+  }
+  
+  .order-confirmation .support a {
+    color: #ccc;
+    text-decoration: underline;
+  }
+  
+  .order-confirmation .support a:hover {
+    color: #666;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .order-confirmation {
+      padding: 20px;
+    }
+  
+    .order-confirmation h1 {
+      font-size: 24px;
+    }
+  
+    .order-confirmation p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .order-confirmation .support {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: none;
+    }
+  }
   

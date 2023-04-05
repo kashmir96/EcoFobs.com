@@ -22,3 +22,19 @@
     fbq('init', '576633227759446');
     fbq('track', 'PageView');
 //!-- End Meta Pixel Code -->
+
+//!-- Google Tracking Tags -->
+// Google tag (gtag.js)
+var gtagScript = document.createElement('script');
+gtagScript.async = true;
+gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11064141022';
+document.head.appendChild(gtagScript);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'AW-11064141022');
+
+// Google Event snippet for Begin Checkout conversion page
+gtag('event', 'conversion', {'send_to': 'AW-11064141022/sur-COeN_5UYEN7J5Zsp'});
