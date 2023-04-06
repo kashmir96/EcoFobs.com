@@ -407,6 +407,36 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
   }
  
+/* Style radio buttons as buttons */
+input[type="radio"] {
+  display: none;
+}
+
+label[for^="size"] {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style selected radio button */
+input[type="radio"]:checked + label[for^="size"] {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Move radio buttons to a new line on small screens */
+@media only screen and (max-width: 768px) {
+  label[for^="size"] {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 
 

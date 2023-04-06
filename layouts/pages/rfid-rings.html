@@ -21,8 +21,29 @@
         <li> Fast delivery</li>
         <li> 30 day money back guarantee</li>
         </ul>
-      <a href="https://buy.stripe.com/dR6aHI4IRcS07defZ0" style="margin:20px auto 50px;" class="btn btn-primary">Buy Now</a>
-      
+<!-- Add radio buttons for size options -->
+<div>
+  Select Size:<br>
+  <input type="radio" id="size17mm" name="size-options" value="17mm" checked>
+  <label for="size17mm">17mm</label>
+  <input type="radio" id="size18mm" name="size-options" value="18mm">
+  <label for="size18mm">18mm</label>
+  <input type="radio" id="size19mm" name="size-options" value="19mm">
+  <label for="size19mm">19mm</label>
+  <input type="radio" id="size20mm" name="size-options" value="20mm">
+  <label for="size20mm">20mm</label>
+  <input type="radio" id="size21mm" name="size-options" value="21mm">
+  <label for="size21mm">21mm</label>
+  <input type="radio" id="size22mm" name="size-options" value="22mm">
+  <label for="size22mm">22mm</label>
+</div>
+
+<!-- Add "Order Now" section with dynamic link -->
+<div>
+  <a id="order-now" href="https://buy.stripe.com/dR6aHI4IRcS07defZ0" style="margin:20px auto 50px;" class="btn btn-primary">Order Now</a>
+</div>
+
+
       <div class="product-description">
       <h2>Unlock Your World with Ceramic RFID Key Rings.</h2>
       <img class="mobile-only" src="/video/ring-demo-square.gif" alt="Product Gif" load="lazy">
@@ -32,8 +53,11 @@
           <li><strong>Simple, Stylish and Sustainable: </strong>These RFID keys are made from a simplistic epoxy coated ceramic and look like a stylish piece of Jewellery. People will think you’ve got super powers opening your door with a wave of your hand and will think you’re wearing a key on your finger.</li>
           <li><strong>Versatile Access: </strong>These RFID key rings work on any access control system that utilises MiFare RFID technology, the most secure and common RFID technology on the market. Use it on lockers, gates, doors for your gym, office, pool, sauna or any other.</li>
         </ul>
-        <a href="https://buy.stripe.com/dR6aHI4IRcS07defZ0" style="margin:20px auto 50px;" class="btn btn-primary">Buy Now</a>
 
+        <div>
+            <h2>What are you waiting for?</h2>
+            <p>Make the switch to a more convenient, streamlined lifestyle and save your mental space for more important things than door access.</p>
+          </div>
 
         <h2>What Our Customers Are Saying:</h2>
           <div class="review">
@@ -42,12 +66,6 @@
           <div class="review">
             <blockquote>“As a swimmer, it’s always been a pain keeping my RFID key fob close by to keep my belongings safe in the locker. This ring has been a game changer, I never lose it, and I’m never left hunting for it when I’m cold and dripping with water.” <br>- Mark S., Avid Swimmer</blockquote>
           </div>
-
-          <div>
-            <h2>What are you waiting for?</h2>
-            <p>Make the switch to a more convenient, streamlined lifestyle and save your mental space for more important things than door access.</p>
-            <a href="https://buy.stripe.com/dR6aHI4IRcS07defZ0" style="margin:20px auto 50px;" class="btn btn-primary">Buy Now</a>
-          </div>
         
         <h2>Specifications & Compatibility</h2>
         <p>These rings operate at 13.56MHz and use Mifare RFID technology.</p>
@@ -55,7 +73,6 @@
         
         <h2>Bulk Order Pricing:</h2>
     <p>Looking to purchase in bulk for your gym, swim club, office or other business application? <strong><a href="/contact">Get in touch</a></strong> today and learn about our special high volume deals. </p>
-    <a href="https://buy.stripe.com/dR6aHI4IRcS07defZ0" style="margin:20px auto 50px;" class="btn btn-primary">Buy Now</a>
 
   </div>
         
@@ -77,6 +94,42 @@
         });
 
       </script> 
+
+
+<script>
+  // Get radio buttons and "Order Now" link
+  const radios = document.querySelectorAll('input[name="size-options"]');
+  const orderLink = document.getElementById('order-now');
+
+  // Add event listener to each radio button
+  radios.forEach(radio => {
+    radio.addEventListener('click', () => {
+      // Get selected radio button value
+      const selectedSize = document.querySelector('input[name="size-options"]:checked').value;
+      
+      // Set "Order Now" link based on selected size
+      if (selectedSize === '17mm') {
+        orderLink.href = 'https://buy.stripe.com/dR6aHI4IRcS07defZ0';
+      } else if (selectedSize === '18mm') {
+        orderLink.href = 'https://buy.stripe.com/xyzABC123456';
+      } else if (selectedSize === '19mm') {
+        orderLink.href = 'https://buy.stripe.com/123DEF456GHI';
+      } else if (selectedSize === '20mm') {
+        orderLink.href = 'https://buy.stripe.com/abcXYZ789123';
+      } else if (selectedSize === '21mm') {
+        orderLink.href = 'https://buy.stripe.com/456JKL789MNO';
+      } else if (selectedSize === '22mm') {
+        orderLink.href = 'https://buy.stripe.com/xyzDEF123456';
+      }
+    });
+  });
+</script>
+
    
       
 {{ end }}
+
+
+
+
+
