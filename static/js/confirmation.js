@@ -38,3 +38,11 @@ gtag('config', 'AW-11064141022');
 
 // Google Event snippet for Begin Checkout conversion page
 gtag('event', 'conversion', {'send_to': 'AW-11064141022/sur-COeN_5UYEN7J5Zsp'});
+
+
+// Fathom Confirmation Event
+<script>
+window.addEventListener('load', (event) => {
+        fathom.trackGoal('KURKINW3', 6200);
+});
+</script>
