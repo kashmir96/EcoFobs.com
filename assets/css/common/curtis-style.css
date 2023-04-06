@@ -430,13 +430,7 @@ input[type="radio"]:checked + label[for^="size"] {
   color: #fff;
 }
 
-/* Move radio buttons to a new line on small screens */
-@media only screen and (max-width: 768px) {
-  label[for^="size"] {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+
 
 
 
