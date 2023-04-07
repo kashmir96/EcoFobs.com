@@ -40,7 +40,7 @@
 
 <!-- Add "Order Now" section with dynamic link -->
 <div>
-  <a id="order-now" href="https://buy.stripe.com/aEU4jkdfndW47de3cl" style="margin:20px auto 50px;" class="btn btn-primary">Order Now</a>
+  <a href="https://buy.stripe.com/aEU4jkdfndW47de3cl" onclick="fathom.trackGoal('MAR3DJWC', 0);" id="order-now" style="margin:20px auto 50px;" class="btn btn-primary">Order Now</a>
 </div>
 
 
@@ -124,15 +124,8 @@
     });
   });
 </script>
-<script>
-  window.addEventListener('load', (event) => {
-          document.getElementById('order-now').addEventListener('click', () => {
-                  fathom.trackGoal('MAR3DJWC', 0);
-          });
-  });
-  </script>
 
-   
+
       
 {{ end }}
 
