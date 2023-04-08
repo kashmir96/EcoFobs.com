@@ -44,11 +44,6 @@ menu:
       url: /posts/
       weight: 20
 
-    - identifier: industries
-      name: Industries
-      url: /industries/
-      weight: 30
-
     - identifier: contact
       name: Contact
       url: /contact

@@ -1,0 +1,147 @@
+{{ define "main" }}
+
+<style> .main { padding:0px !important; }</style>
+
+  <div class="container">
+    <div class="product-images-full">  
+      <img src="/img/rings/1.webp" alt="Product Image 1" class="active">
+      <img src="/video/ring-demo-square.gif" alt="Product Gif" load="lazy">
+      <img src="/img/rings/11.webp" alt="Product Image 2" load="lazy">
+      <img src="/img/rings/5.webp" alt="Product Image 3" load="lazy">
+      <img src="/img/rings/9.webp" alt="Product Image 4" load="lazy">
+      <img src="/img/rings/3.webp" alt="Product Image 5" load="lazy">
+    </div>    
+    <div class="product-info">
+      <h1 class="product-title">Ceramic RFID Key Rings: Upgrade Your Business Access Solutions. </h1>
+      <p>Offer your staff, members, or visitors the ultimate convenience with our ceramic RFID key rings. Perfect for offices, gyms, and swimming clubs. Make accessing your facilities a breeze.</p>
+      
+      <p class="product-price">$39.99</p>
+      <p>Healthy discounts for bulk orders 10 or more - <a style="font-weight:bold;" href="/contact">Enquire now</a></p>
+      <ul class="no-decoration">
+        <li> Free shipping</li>
+        <li> Fast delivery</li>
+        <li> 30 day money back guarantee</li>
+        </ul>
+<div>
+  Select Size:<br>
+  <input type="radio" id="size17mm" name="size-options" value="17mm" checked>
+  <label for="size17mm">17mm</label>
+  <input type="radio" id="size18mm" name="size-options" value="18mm">
+  <label for="size18mm">18mm</label>
+  <input type="radio" id="size19mm" name="size-options" value="19mm">
+  <label for="size19mm">19mm</label>
+  <input type="radio" id="size20mm" name="size-options" value="20mm">
+  <label for="size20mm">20mm</label>
+  <input type="radio" id="size21mm" name="size-options" value="21mm">
+  <label for="size21mm">21mm</label>
+  <input type="radio" id="size22mm" name="size-options" value="22mm">
+  <label for="size22mm">22mm</label>
+</div>
+
+<div>
+  <a href="https://buy.stripe.com/aEU4jkdfndW47de3cl" onclick="fathom.trackGoal('MAR3DJWC', 0);" id="order-now" style="margin:20px auto 50px;" class="btn btn-primary">Order Now</a>
+</div>
+
+<div class="product-description">
+  <h2>Unlock Your World with Ceramic RFID Key Rings.</h2>
+  <img class="mobile-only" src="/video/ring-demo-square.gif" alt="Product Gif" load="lazy">
+  
+  <div>
+    <h3>Industries Benefitting from Ceramic RFID Key Rings</h3>
+    <p>These versatile and stylish ceramic RFID key rings are perfect for a wide range of industries and applications, including gyms, swimming pools, office buildings, events, gated communities, and more. Simplify access and enhance user experience with these easy-to-use, secure, and fashionable RFID key rings.</p>
+  </div>
+  
+  <div>
+    <h3>Enhance Your Business with Ceramic RFID Key Rings</h3>
+    <p>Upgrade your business's access control system and provide your staff, members, and clients with a more convenient and stylish way to access your facilities. With ceramic RFID key rings, your business can benefit from increased efficiency, improved security, and a modern, streamlined experience that users will love. Don't miss out on this innovative solution for businesses of all sizes.</p>
+    <a href="/contact" onclick="fathom.trackGoal('MAR3DJWC', 0);" style="margin:20px auto 50px;" class="btn btn-primary">Contact Us for Business Inquiries</a>
+  </div>
+  
+  <div class="product-description">
+    <h2>Upgrade Your Business with Ceramic RFID Key Rings</h2>
+    <img class="mobile-only" src="/video/ring-demo-square.gif" alt="Product Gif" load="lazy">
+  
+    <ul>
+      <li><strong>Streamline Access Control:</strong> Replace traditional key fobs or access cards with sleek, epoxy coated ceramic RFID key rings. Enhance user experience, reduce clutter, and increase efficiency in your business.</li>
+      <li><strong>Modern, Stylish Design:</strong> Our ceramic RFID key rings look like a fashionable accessory, seamlessly integrating with any professional environment while providing secure and versatile access.</li>
+      <li><strong>Compatible & Secure:</strong> Our RFID key rings work with any access control system utilizing MiFare RFID technology, the most secure and widely-used RFID technology in the market.</li>
+    </ul>
+  
+    <div>
+      <h2>Why Choose Ceramic RFID Key Rings for Your Business?</h2>
+      <p>Invest in a modern, efficient, and stylish access solution that impresses clients, improves staff satisfaction, and enhances security. Make the switch to ceramic RFID key rings and see the difference for yourself.</p>
+    </div>
+  
+    <h2>What Business Owners Are Saying:</h2>
+    <div class="review">
+      <blockquote>"Since we introduced Ecofobs ceramic RFID key rings in our gym, our members have been raving about the convenience and style. The ease of use and modern look have elevated our brand in the eyes of our clients." <br>- Sarah T., Gym Owner</blockquote>
+    </div>
+    <div class="review">
+      <blockquote>"We implemented ceramic RFID key rings in our office building, and the feedback has been overwhelmingly positive. Our employees appreciate the sleek design and the hassle-free access it provides."<br>- James R., Office Manager</blockquote>
+    </div>
+  
+    <h2>Specifications & Compatibility</h2>
+    <p>These rings operate at 13.56MHz and use Mifare RFID technology.</p>
+    <p><strong>Important Note:</strong> These rings work on any Mifare RFID reader, but often require the RFID key to be logged into the system by the access provider. Please check with your provider to ensure they allow alternative keys before purchasing, as we don't guarantee they will permit third-party keys in their system.</p>
+  
+    <h2>Bulk Order Pricing:</h2>
+    <p>Looking to purchase in bulk for your gym, swim club, office, or other business application? <strong><a href="/contact">Get in touch</a></strong> today and learn about our special high-volume deals.</p>
+  </div>
+</div>
+</div>
+<script>
+    const images = document.querySelectorAll('.product-images img');
+    const activeImage = document.querySelector('.product-images img.active');
+    
+    images.forEach(image => {
+      image.addEventListener('click', () => {
+        activeImage.classList.remove('active');
+        activeImage = image;
+        activeImage.classList.add('active');
+        const imageUrl = activeImage.getAttribute('src');
+        const productImage = document.querySelector('.product-images-full img');
+        productImage.setAttribute('src', imageUrl);
+      });
+    });
+
+  </script> 
+
+
+<script>
+// Get radio buttons and "Order Now" link
+const radios = document.querySelectorAll('input[name="size-options"]');
+const orderLink = document.getElementById('order-now');
+
+// Add event listener to each radio button
+radios.forEach(radio => {
+radio.addEventListener('click', () => {
+  // Get selected radio button value
+  const selectedSize = document.querySelector('input[name="size-options"]:checked').value;
+  
+  // Set "Order Now" link based on selected size
+  if (selectedSize === '17mm') {
+    orderLink.href = 'https://buy.stripe.com/aEU4jkdfndW47de3cl';
+  } else if (selectedSize === '18mm') {
+    orderLink.href = 'https://buy.stripe.com/14k5nob7faJS5563ck';
+  } else if (selectedSize === '19mm') {
+    orderLink.href = 'https://buy.stripe.com/aEU7vw0sB05ecxy9AH';
+  } else if (selectedSize === '20mm') {
+    orderLink.href = 'https://buy.stripe.com/fZe8zA0sB8BK5569AG';
+  } else if (selectedSize === '21mm') {
+    orderLink.href = 'https://buy.stripe.com/3cs5noa3bg4cdBC4gl';
+  } else if (selectedSize === '22mm') {
+    orderLink.href = 'https://buy.stripe.com/3cs2bc5MV7xGapq6os';
+  }
+});
+});
+</script>
+
+
+  
+{{ end }}
+
+
+
+
+
+
