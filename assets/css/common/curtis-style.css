@@ -377,14 +377,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
   /* Small screens (up to 600px) */
 @media (max-width: 600px) {
-  #order-now {
-    position: fixed;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    width: 80%;
-  }
 
     .container {
       display: flex;
