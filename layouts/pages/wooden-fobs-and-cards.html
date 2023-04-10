@@ -1,0 +1,193 @@
+{{ define "main" }}
+
+<style> .main { padding:0px !important; }</style>
+
+  <div class="container">
+    <div class="product-images-full">  
+      <img src="/img/wood-fob-card/4.webp" alt="Product Image 1" class="active">
+      <img src="/img/wood-fob-card/3.webp" alt="Product Image 2" load="lazy">
+      <img src="/img/wood-fob-card/2.webp" alt="Product Image 4" load="lazy">
+    </div>    
+    <div class="product-info">
+      <h1 class="product-title">Custom Branded Wooden RFID Key Fobs & Cards</h1>
+      <p>Experience convenience and sustainability with our custom branded wooden RFID key fobs and cards. Designed for environmentally-conscious businesses, these eco-friendly products provide secure access and a unique touch to your branding.</p>
+      
+      <p class="product-price">Contact us for pricing</p>
+      <ul class="no-decoration">
+        <li> Customizable print or engraving</li>
+        <li> Made from wood with multiple color and grain options</li>
+        <li> High security frequency 13.56mhz Mifare options for 4 or 7 bit encryption</li>
+      </ul>
+
+<a style="float:right;" href="#" id="ringSizingGuideLink">Fob & Card Diagrams</a>
+  <div id="ringSizingGuideModal" class="ring-sizing-guide-modal">
+    <div class="ring-sizing-guide-modal-content">
+      <img src="/img/wood-fob-card/diagram.webp" alt="Fob & Card Diagrams">
+    </div>
+  </div>
+
+<a onclick="fathom.trackGoal('UVSSQZTM', 0);" style="font-weight:bold; cursor: pointer; margin:20px auto 50px" class="enquire-now btn btn-primary">Enquire Now</a>
+
+<blockquote><strong style="color:rgb(0, 70, 221);">Important Note:</strong> These keys work on any Mifare RFID reader, but it often requires the RFID key being logged into the system by the access provider. Please sure to check with your provider to ensure they allow alternative keys before purchasing as we don’t guarantee they will allow you to assign third party keys into their system.</blockquote>
+
+      <div class="product-description">
+      
+        <h3>Customizable Print or Engraving</h3>
+        <p>Our wooden RFID fobs and cards can be custom-printed or engraved with your company logo or design, providing a perfect match for your brand and enhancing your organization's eco-friendly image.</p>
+
+        <h3>Made from Wood</h3>
+        <p>Our unique handmade wooden RFID fobs and cards come in multiple color and grain options, offering an eco-friendly alternative to traditional plastic cards and fobs.</p>
+
+        <h3>High Security Frequency</h3>
+        <p>Our wooden RFID fobs and cards offer high-security frequency access control, ensuring a safe and secure environment for your business.</p>
+      
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Add Modal HTML -->
+ <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <link rel="stylesheet" href="assets/css/common/form.css">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+      onload="if(submitted) {window.location='/thankyou';}"></iframe>
+      
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtwNaXHw-OLuwls_JQrS_xn-w-qJhVic_VduRwNFX6p_BFpw/formResponse" 
+      method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      </form>
+      <h1 style="text-align:center;">EcoFobs Bulk Order Enquiry</h2>
+
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtwNaXHw-OLuwls_JQrS_xn-w-qJhVic_VduRwNFX6p_BFpw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
+        <label>Name*</label>
+              <input type="text" placeholder="Your Name*" class="form-input" name="entry.1261075766" required>
+      
+        <label>Email*</label>
+              <input type="email" placeholder="your@email.com*" class="form-input" name="entry.1749377851" required>
+      
+         <label>Phone</label>
+              <input type="text" placeholder="Your Phone Number*" class="form-input" name="entry.1241064211">
+      
+         <label>Product*</label>
+                <input type="text" placeholder="e.g. Ceramic RFID Key Ring, Wooden Fob, Wooden Card, Wooden Fob (Branded), Wooden Card (Branded)" class="form-input" name="entry.910903508" required>
+           
+      <label>Quantity*</label>
+              <input type="text" placeholder="e.g. 150 rings, 200 branded wooden fobs" class="form-input" name="entry.1255121817" required>
+      
+      <label>What is your industry? </label>
+              <input type="text" placeholder="e.g. office, gym, swimming club, education provider, events, accomodation" class="form-input" name="entry.485213153" required>
+      
+         <button type="submit">Send</button>
+      </form>
+  </div>
+</div>
+
+<!-- Add Modal JavaScript -->
+<script>
+  // Get modal, trigger link, and close button
+  var modal = document.getElementById("myModal");
+  var triggers = document.getElementsByClassName("enquire-now");
+  var closeButton = document.getElementsByClassName("close")[0];
+
+  // Show modal when trigger link is clicked
+  for (let i = 0; i < triggers.length; i++) {
+  triggers[i].onclick = function () {
+    modal.style.display = "block";
+  };
+}
+
+
+  // Hide modal when close button is clicked
+  closeButton.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // Hide modal when user clicks outside the modal content
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
+<script>
+    const images = document.querySelectorAll('.product-images img');
+    const activeImage = document.querySelector('.product-images img.active');
+    
+    images.forEach(image => {
+      image.addEventListener('click', () => {
+        activeImage.classList.remove('active');
+        activeImage = image;
+        activeImage.classList.add('active');
+        const imageUrl = activeImage.getAttribute('src');
+        const productImage = document.querySelector('.product-images-full img');
+        productImage.setAttribute('src', imageUrl);
+      });
+    });
+
+  </script> 
+
+
+<script>
+// Get radio buttons and "Order Now" link
+const radios = document.querySelectorAll('input[name="size-options"]');
+const orderLink = document.getElementById('order-now');
+
+// Add event listener to each radio button
+radios.forEach(radio => {
+radio.addEventListener('click', () => {
+  // Get selected radio button value
+  const selectedSize = document.querySelector('input[name="size-options"]:checked').value;
+  
+  // Set "Order Now" link based on selected size
+  if (selectedSize === '17mm') {
+    orderLink.href = 'https://buy.stripe.com/aEU4jkdfndW47de3cl';
+  } else if (selectedSize === '18mm') {
+    orderLink.href = 'https://buy.stripe.com/14k5nob7faJS5563ck';
+  } else if (selectedSize === '19mm') {
+    orderLink.href = 'https://buy.stripe.com/aEU7vw0sB05ecxy9AH';
+  } else if (selectedSize === '20mm') {
+    orderLink.href = 'https://buy.stripe.com/fZe8zA0sB8BK5569AG';
+  } else if (selectedSize === '21mm') {
+    orderLink.href = 'https://buy.stripe.com/3cs5noa3bg4cdBC4gl';
+  } else if (selectedSize === '22mm') {
+    orderLink.href = 'https://buy.stripe.com/3cs2bc5MV7xGapq6os';
+  }
+});
+});
+</script>
+
+<!--image modal script-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('ringSizingGuideModal');
+  const openModal = document.getElementById('ringSizingGuideLink');
+
+  openModal.addEventListener('click', function (event) {
+    event.preventDefault();
+    modal.style.display = 'block';
+  });
+
+  window.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+      modal.style.display = 'none';
+    }
+  });
+});
+</script>
+
+
+  
+{{ end }}
+
+
+
+

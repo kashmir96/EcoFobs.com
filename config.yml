@@ -39,15 +39,21 @@ menu:
       url: /pages/rfid-rings/
       weight: 10
 
+    - identifier: wood-fobs-cards
+      name: Wooden RFID Fobs & Cards
+      url: /pages/wooden-fobs-and-cards/
+      weight: 20
+
     - identifier: posts
       name: Posts
       url: /posts/
-      weight: 20
+      weight: 30
 
     - identifier: contact
       name: Contact
       url: /contact
       weight: 40
+
 
 
 markup:

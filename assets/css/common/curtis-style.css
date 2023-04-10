@@ -70,6 +70,10 @@ a:not(:hover) {
 }
 
 
+.form-input {
+  color: black !important;
+}
+
 /* css for contact form */
 
 #fcf-form {
@@ -196,8 +200,8 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color: #00b70f;
-    border-color: #00b70f;
+    background-color: #00b70f !important;
+    border-color: #00b70f !important;
 }
 
 .fcf-btn-primary:hover {
@@ -515,3 +519,62 @@ input[type="radio"]:checked + label[for^="size"] {
     }
   }
   
+
+/* modal css */ 
+
+.modal, .ring-sizing-guide-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color:#00b70f !important;
+  border-color:#00b70f !important;
+}
+
+.ring-sizing-guide-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.ring-sizing-guide-modal img {
+  max-width: 100%;
+  height: auto;
+}

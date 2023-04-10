@@ -16,11 +16,11 @@
       <p>Offer your staff, members, or visitors the ultimate convenience with our ceramic RFID key rings. Perfect for offices, gyms, and swimming clubs. Make accessing your facilities a breeze.</p>
       
       <p class="product-price">$24.99</p>
-      <p>Healthy discounts for bulk orders 10 or more - <a style="font-weight:bold;" href="/contact">Enquire now</a></p>
+      <p>Healthy discounts for bulk orders 10 or more - <a class="enquire-now" onclick="fathom.trackGoal('UVSSQZTM', 0);" style="font-weight:bold; cursor: pointer;">Enquire now</a></p>
       <ul class="no-decoration">
         <li> Free shipping</li>
-        <li> 30 day money back guarantee</li>
-        <li style="color:red;"> Low stock remaining, next batch arrives in May 25.</li>
+        <li> 30 day money back guarantee*</li>
+        <li style="color:rgb(0, 70, 221);"> Low stock remaining, next batch arrives in May 25.</li>
         </ul>
 <div>
   Select Size:<br>
@@ -37,10 +37,18 @@
   <input type="radio" id="size22mm" name="size-options" value="22mm">
   <label for="size22mm">22mm</label>
 </div>
+<a style="float:right;" href="#" id="ringSizingGuideLink">Ring sizing guide</a>
+  <div id="ringSizingGuideModal" class="ring-sizing-guide-modal">
+    <div class="ring-sizing-guide-modal-content">
+      <img src="/img/rings/sizing.webp" alt="Ring Sizing Guide">
+    </div>
+  </div>
 
 <div>
   <a href="https://buy.stripe.com/aEU4jkdfndW47de3cl" onclick="fathom.trackGoal('MAR3DJWC', 0);" id="order-now" style="margin:20px auto 50px;" class="btn btn-primary">Order Now</a>
 </div>
+
+<blockquote><strong style="color:rgb(0, 70, 221);">Important Note:</strong> These rings work on any Mifare RFID reader, but it often requires the RFID key being logged into the system by the access provider. Please sure to check with your provider to ensure they allow alternative keys before purchasing as we don’t guarantee they will allow you to assign third party keys into their system.</blockquote>
 
 <div class="product-description">
   <h2>Unlock Your World with Ceramic RFID Key Rings.</h2>
@@ -54,9 +62,9 @@
   <div>
     <h3>Enhance Your Business with Ceramic RFID Key Rings</h3>
     <p>Upgrade your business's access control system and provide your staff, members, and clients with a more convenient and stylish way to access your facilities. With ceramic RFID key rings, your business can benefit from increased efficiency, improved security, and a modern, streamlined experience that users will love. Don't miss out on this innovative solution for businesses of all sizes.</p>
-    <a href="/contact" onclick="fathom.trackGoal('MAR3DJWC', 0);" style="margin:20px auto 50px;" class="btn btn-primary">Contact Us for Business Inquiries</a>
+    <a onclick="fathom.trackGoal('UVSSQZTM', 0);" style="font-weight:bold; cursor: pointer; margin:20px auto 50px" class="enquire-now btn btn-primary">Request a Bulk Order Quote</a>
   </div>
-  
+
   <div class="product-description">
     <h2>Upgrade Your Business with Ceramic RFID Key Rings</h2>
     <img class="mobile-only" src="/video/ring-demo-square.gif" alt="Product Gif" load="lazy">
@@ -82,13 +90,78 @@
   
     <h2>Specifications & Compatibility</h2>
     <p>These rings operate at 13.56MHz and use Mifare RFID technology.</p>
-    <p><strong>Important Note:</strong> These rings work on any Mifare RFID reader, but often require the RFID key to be logged into the system by the access provider. Please check with your provider to ensure they allow alternative keys before purchasing, as we don't guarantee they will permit third-party keys in their system.</p>
   
-    <h2>Bulk Order Pricing:</h2>
-    <p>Looking to purchase in bulk for your gym, swim club, office, or other business application? <strong><a href="/contact">Get in touch</a></strong> today and learn about our special high-volume deals.</p>
+    </div>
+  <p>Due to ongoing shipping delays outside our control, please allow for up to a few weeks for your package to arrive. We generally aim for fast turnaround, however, our shipment provider has advised of a backlog they’re still working through. </p>
+
+</div>
+
+ <!-- Add Modal HTML -->
+ <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <link rel="stylesheet" href="assets/css/common/form.css">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+      onload="if(submitted) {window.location='/thankyou';}"></iframe>
+      
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtwNaXHw-OLuwls_JQrS_xn-w-qJhVic_VduRwNFX6p_BFpw/formResponse" 
+      method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      </form>
+      <h1 style="text-align:center;">EcoFobs Bulk Order Enquiry</h2>
+
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtwNaXHw-OLuwls_JQrS_xn-w-qJhVic_VduRwNFX6p_BFpw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
+        <label>Name*</label>
+              <input type="text" placeholder="Your Name*" class="form-input" name="entry.1261075766" required>
+      
+        <label>Email*</label>
+              <input type="email" placeholder="your@email.com*" class="form-input" name="entry.1749377851" required>
+      
+         <label>Phone</label>
+              <input type="text" placeholder="Your Phone Number*" class="form-input" name="entry.1241064211">
+      
+         <label>Product*</label>
+                <input type="text" placeholder="e.g. Ceramic RFID Key Ring, Wooden Fob, Wooden Card, Wooden Fob (Branded), Wooden Card (Branded)" class="form-input" name="entry.910903508" required>
+           
+      <label>Quantity*</label>
+              <input type="text" placeholder="e.g. 150 rings, 200 branded wooden fobs" class="form-input" name="entry.1255121817" required>
+      
+      <label>What is your industry? </label>
+              <input type="text" placeholder="e.g. office, gym, swimming club, education provider, events, accomodation" class="form-input" name="entry.485213153" required>
+      
+         <button type="submit">Send</button>
+      </form>
   </div>
 </div>
-</div>
+
+<!-- Add Modal JavaScript -->
+<script>
+  // Get modal, trigger link, and close button
+  var modal = document.getElementById("myModal");
+  var triggers = document.getElementsByClassName("enquire-now");
+  var closeButton = document.getElementsByClassName("close")[0];
+
+  // Show modal when trigger link is clicked
+  for (let i = 0; i < triggers.length; i++) {
+  triggers[i].onclick = function () {
+    modal.style.display = "block";
+  };
+}
+
+
+  // Hide modal when close button is clicked
+  closeButton.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // Hide modal when user clicks outside the modal content
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
 <script>
     const images = document.querySelectorAll('.product-images img');
     const activeImage = document.querySelector('.product-images img.active');
@@ -133,6 +206,31 @@ radio.addEventListener('click', () => {
     orderLink.href = 'https://buy.stripe.com/3cs2bc5MV7xGapq6os';
   }
 });
+});
+</script>
+
+<!--image modal script-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('ringSizingGuideModal');
+  const openModal = document.getElementById('ringSizingGuideLink');
+
+  openModal.addEventListener('click', function (event) {
+    event.preventDefault();
+    modal.style.display = 'block';
+  });
+
+  window.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+      modal.style.display = 'none';
+    }
+  });
 });
 </script>
 
